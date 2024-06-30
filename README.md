@@ -29,7 +29,7 @@ To set up and run the project, follow these steps:
 
 4. **Configure API Base URL:**
 
-   - Open the `api.js` file and set the `BASEURL` variable with the appropriate API base URL (up to the part ending in `...HeyQ==`):
+   - Open the `api.js` file in the src folder and set the `BASEURL` variable with the appropriate API base URL (up to the part ending in `...HeyQ==`):
      ```js
      const BASEURL = ""; // paste the URL only till (...HeyQ==)
      ```
