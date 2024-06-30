@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter',sans-serif; //sans-serif is the fallback font   
+    background-color: #ffffff;
+}
+
+.noScrollBar::-webkit-scrollbar {
+    /* background: transparent; */
+    display: none;
+}

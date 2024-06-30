@@ -1,0 +1,33 @@
+.upcoming {
+  padding-left: 10vw;
+  gap: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 240px;
+  width: 100%;
+
+  .loading {
+    color: #1e2022;
+    font-size: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @keyframes pulse {
+      0% {
+        color: #1e2022;
+        transform: scale(1);
+      }
+      50% {
+        color: lighten(#1e2022, 10%); 
+        transform: scale(1.2); 
+      }
+      100% {
+        color: #cf2d2d;
+        transform: scale(1);
+      }
+    }
+
+    animation: pulse 1.5s infinite alternate ease-in-out;
+  }
+}

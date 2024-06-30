@@ -1,0 +1,22 @@
+//we can use mixin to use these styles in other scss files
+//this file will be used for responsive layout. (NEAT)
+
+//mobile first strategy.
+@mixin sm {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+

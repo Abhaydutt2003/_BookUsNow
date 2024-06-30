@@ -1,0 +1,43 @@
+.text-scroll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    color: white;
+    position: absolute;
+    top: 83%;
+    left: 10%;
+    width: 90vw;
+    z-index: 3;
+    .recshows{
+        cursor: pointer;
+        color: #e0dbda;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 12px;
+        transition:all 0.4s ease;
+        &:hover{
+          scale: 1.01;
+        }
+    }
+    .seeall{
+        font-size: small;
+        cursor: pointer;
+        color: #e0dbda;
+        text-decoration: underline;
+        transition:all 0.4s ease;
+        &:hover{
+          scale: 1.01;
+        }
+    }
+}
+.hscroll{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    width: 90vw;
+    gap: 24px;
+    overflow-y: auto;
+    display: flex;
+}

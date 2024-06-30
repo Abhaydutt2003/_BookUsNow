@@ -1,0 +1,218 @@
+@import '../../responsive.scss';
+
+.navbar{
+  flex-grow: 0;
+  height: 110px;
+  width: 100%;
+  display: flex;
+  padding: 12px 30px;
+  @include md{
+    flex-direction: column;
+    gap: 12px;
+  }
+  //mobile styles
+  .top{
+    flex-grow: 2;
+    display: none;
+    @include md{
+      display: flex;
+    }
+    justify-content: space-between;
+    align-items: center;
+    .links{
+      display: flex;
+      gap: 12px;
+      color: #989090;
+      .link{
+        font-size: larger;
+        cursor: pointer;
+        //increase when hover
+        transition:all 0.4s ease;
+        &:hover{
+          color: #000;  
+          scale: 1.01;
+        }
+      }
+ 
+    }
+
+    .heading{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .title{
+        color: #CF2D2D;
+        font-size: large;
+        font-weight: bolder;
+      }
+      .location{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #989090;
+  
+        //increase when hover
+        transition:all 0.4s ease;
+        &:hover{
+          color: #000;  
+          scale: 1.01;
+        }
+  
+        span{
+          color: #1E2022;
+          font-size: small;
+        }
+      }
+    }
+  }  
+  .bottom {
+    display: none;
+    align-items: center;
+  
+    @include md {
+      display: flex;
+    }
+    
+    .navLinks {
+      overflow-y: hidden;  
+      flex-grow: 1;
+      display: flex;
+      gap: 20px;
+      align-items: end;
+      @include sm{
+        justify-content: flex-start;  
+      }
+      justify-content: center;
+  
+      .link {
+        color: #1E2022;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        
+        &:hover {
+          color: #000;
+          scale: 1.01;  /* Corrected to use transform for scaling */
+        }
+      }
+    }
+  }
+
+  
+
+  //Desktop styles
+  .start{
+    flex-grow: 1;
+    display: flex;
+    @include md{
+      display: none;
+    }
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    .title{
+      color: #CF2D2D;
+      font-size: large;
+      font-weight: bolder;
+    }
+    .location{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #989090;
+
+      //increase when hover
+      transition:all 0.4s ease;
+      &:hover{
+        color: #000;  
+        scale: 1.01;
+      }
+
+      span{
+        color: #1E2022;
+        font-size: small;
+      }
+    }
+  }
+
+  .middle{
+    flex-grow: 5;
+    display: flex;
+    @include md{
+      display: none;
+    }
+    flex-direction: column;
+    .navLinks{
+      overflow-y: scroll;
+      flex-grow: 1;
+      display: flex;
+      gap: 24px;
+      align-items: end;
+      justify-content: center;
+      .link{
+        color: #1E2022;
+        text-decoration: none;
+        //increase when hover
+       transition:all 0.4s ease;
+       &:hover{
+         color: #000;  
+         scale: 1.01;
+       }
+      }
+    }
+  }
+
+  .end{
+    flex-grow: 1;
+    display: flex;
+    @include md{
+      display: none;
+    }
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    .favorites{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color:#989090;
+      span{
+        color: #1E2022;
+        font-size: small;
+      }
+       //increase when hover
+       transition:all 0.4s ease;
+       &:hover{
+         color: #000;  
+         scale: 1.01;
+       }
+    } 
+
+    .signIn{
+      padding: 10px;
+      border-radius: 5px;
+      border: 0.5px solid #B0BABF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color:#989090;
+      span{
+        color: #1E2022;
+        font-size: small;
+      }
+      //increase when hover
+      transition:all 0.4s ease;
+      &:hover{
+        color: #000;  
+        scale: 1.01;
+      }
+    }
+  }
+}

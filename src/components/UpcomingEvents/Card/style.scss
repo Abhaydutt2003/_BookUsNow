@@ -1,0 +1,70 @@
+.card-up{
+    height: 240px;
+    width: 280px;
+    border: 0.5px solid #B0BABF;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 5px;
+    gap: 12px;
+    cursor: pointer;
+    //increase when hover
+    transition:all 0.4s ease;
+    &:hover{
+      scale: 1.01;
+    }
+    .imageHolder{
+        border-radius: 5px;
+        width: 100%;
+        height: 75%;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        .date{
+            box-sizing: border-box;
+            padding: 8px;
+            opacity: 0.75;
+            border-bottom-left-radius:5px ;
+            border-bottom-right-radius:5px ;
+            font-size: small;
+            width: 100%;
+            height: fit-content;
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .card-up-text{
+        flex-grow: 1;
+        width: 100%;
+        font-size:x-small;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        .eventName{
+            font-size: medium;
+        }
+        .lower{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: #1E2022;
+            .location{
+                color: #989090;
+                display: flex;
+                gap: 2px;
+            }
+            .weather-distance{
+                color: #989090;
+                display: flex;
+                gap: 2px;
+            }
+        }
+    }
+}
