@@ -70,3 +70,5 @@ Vite.js was selected as the build tool and development server because of its bla
 ### Note
 
 The provided API includes image links hosted on Google Drive. However, Chrome may block these images due to security policies, resulting in a `net::ERR_BLOCKED_BY_ORB` error. This error typically occurs due to Cross-Origin Resource Sharing (CORS) restrictions or other browser security mechanisms. Until additional backend access is provided, we have used random image links to demonstrate efficient image fetching within the application.
+
+**Disclaimer:** Please note that the website is hosted on Netlify, and initial loading times may be slow due to this. The hero section image is a local asset, and it takes time for Netlify to deliver that image.
